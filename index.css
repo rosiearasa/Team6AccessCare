@@ -157,3 +157,55 @@ h2 {
   box-shadow: 0 5px rgb(253, 253, 253);
   transform: translateY(4px);
 }
+
+/* Pins */
+
+#Central{
+	position: relative;
+	left:0px;
+	top:-254px;
+}
+
+#Coastal{
+	position: relative;
+	left:0px;
+	top:-175px;
+}
+
+#East{
+	position: relative;
+	left:0px;
+	top:-380px;
+}
+
+#Nairobi{
+	position: relative;
+	left:600px;
+	top:-525px;
+}
+
+#Northeast{
+	position: relative;
+	left:164px;
+	top:-394px;
+}
+
+#Nyanza{
+	position: relative;
+	left:684px;
+	top:-275px;
+}
+
+#RiftValley{
+	position: relative;
+	left:645px;
+	top:-480px;
+}
+
+#West{
+	position: relative;
+	left:600px;
+	top:-525px;
+}
+
+/* end pins */
