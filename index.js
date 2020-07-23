@@ -18,7 +18,7 @@ $("#doSearch").submit(function(evt){
 
   let result = data.filter(function(info){
       console.log(info);
-     return info.favoriteThings.includes(searchTerm);
+     return info.name.includes(searchTerm);
 
       // return info.state == searchTerm;
   })
@@ -36,12 +36,11 @@ function createTemplate(info){
   return `
   <div>
       <h2>${info.name}</h2>
-      <p>${info.city} ${info.state}</p>
-      Favorite Things
+
+
       <ul>
-          <li> ${info.favoriteThings[0]}</li>
-          <li> ${info.favoriteThings[1]}</li>
-          <li> ${info.favoriteThings[2]}</li>
+          <li> ${info.name}</li>
+
       </ul>
       </div>
   `;
