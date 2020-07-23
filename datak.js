@@ -60,4 +60,22 @@ organisation:"Do Right",
 
 },
 
+{
+  country:"Kenya",
+  name:"Pumwani Maternity Hospital",
+  region:"Nairobi",
+  organisation:"Toto Care Box",
+  //contactInformation:"",
+
+},
+
+{
+  country:"Kenya",
+  name:"Jacaranda Maternity",
+  region:"Nairobi",
+  organisation:"Jacaranda Health",
+  //contactInformation:"",
+
+},
+
 ];

@@ -4,23 +4,24 @@ let html="";
 
 for (let i=0; i<datak.length; i++){
 let str= createTemplate(datak[i]);
-html=html+str;
+html= html + str;
 
 }
 
 $(".results").html(html);
 
 }
-$("#doSearch").submit(function(evt){
+
+$("#search").submit(function(evt){
   evt.preventDefault();
   let searchTerm = $("#search").val();
   console.log(searchTerm);
 
-  let result = data.filter(function(info){
+  let result = datak.filter(function(info){
       console.log(info);
-     return info.name.includes(searchTerm);
+     return info.region.includes(searchTerm);
 
-      // return info.state == searchTerm;
+
   })
 
   let html = "";
@@ -35,11 +36,11 @@ $(".results").html(html);
 function createTemplate(info){
   return `
   <div>
-      <h2>${info.name}</h2>
+
 
 
       <ul>
-          <li> ${info.name}</li>
+
 
       </ul>
       </div>
