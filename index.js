@@ -4,6 +4,7 @@ let html="";
 
 for (let i=0; i<datak.length; i++){
 let str= createTemplate(datak[i]);
+
 html= html + str;
 
 }
@@ -12,14 +13,15 @@ $(".results").html(html);
 
 }
 
-$("#search").submit(function(evt){
+$("#doSearch").submit(function(evt){
   evt.preventDefault();
   let searchTerm = $("#search").val();
   console.log(searchTerm);
 
   let result = datak.filter(function(info){
-      console.log(info);
-     return info.region.includes(searchTerm);
+    console.log(info);
+    //search by region
+     return info.region==searchTerm;
 
 
   })
@@ -36,16 +38,12 @@ $(".results").html(html);
 function createTemplate(info){
   return `
   <div>
+        <h2>${info.name}</h2>
+        <p> ${info.region}, ${info.organisation}</p>
 
+        </div>
 
-
-      <ul>
-
-
-      </ul>
-      </div>
   `;
 
 
 }
-$(main);
