@@ -1,61 +1,200 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 
-    <title>Regional Services</title>
+body{
+  background-color: #fff;
+  color: #3f424b;
+  margin: 0;
+  padding: 25px;
+}
 
-    <!--css-->
-     <link rel="stylesheet" href="region.css">
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 25px 0;
+}
 
-     <!--responsive design -->
-  <meta name="viewpoint" content="width=device-width, initial scale">
+h1{
+text-align: center;
+color: #4645d1;
+margin: 0 0 0px 0;
+font-size: 50px;
+font-weight: 800;
+letter-spacing: 1px;
+display: flex;
+align-items: center;
+}
 
-  <title>Regional Services</title>
+h1 i {
+  margin-right: 5px;
+}
 
-</head>
+h2 {
+  font-size: 50px;
+}
 
-<body>
-  <header>
-    <h1 class="centered"><i class="far fa-dot-circle"></i> AccessCare</h1>
-    <div class="topnav">
-      <a class="active" href="index.html">About</a>
-      <a href="region.html">Region</a>
-      <a href="services.html">Services</a>
-      <div class="searchContainer">
-       <input placeholder="Search..."/>
-       <i class="far fa-search"></i>
-      </div>
-    </div>
-  </div>
-  </header>
+.centered {
+  text-align: center;
+  font-weight: 600;
+}
 
-  <!--Pin section-->
+.commonPara {
+  letter-spacing: 0.25px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 25px;
+}
 
+.topnav{
+  background-color: transparent;
+  overflow: hidden;
+  border:0;
+  border-width:1px 0;
+  list-style:none;
+  margin:0;
+  padding:0;
+  text-align:center;
+  display: flex;
+  justify-content: center;
+}
 
-  <img src="Kenya-regions-map.png">
+.topnav a{
+  float: left;
+  color: #000;
+  text-align: center;
+  padding: 0 0px;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+  display:inline;
+  font-weight: 600;
+  letter-spacing: 1px;
+  align-items: center;
+  display: flex;
+}
 
-  <a id = Lamu class = pin href="https://www.safaridoctors.org/">
-    <img src="purple-pin.png" width=30px height=30px>
-  </a>
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
 
-  <a id = Isiolo class = pin href="https://www.lewa.org/impact/communities-2/healthcare/">
-    <img src="purple-pin.png" width=30px height=30px>
-  </a>
+.topnav a.active {
+  background-color: transparent;
+  color: #4645d1;
+  border-bottom: 2px solid #4645d1;
+}
 
-  <a id = Turkana class = pin href="https://gunduafoundation.org/en/health-center/">
-    <img src="purple-pin.png" width=30px height=30px>
-  </a> <!--https://kakuma-mission-hospital.business.site/-->
+.headerCta {
+  background: black;
+  display: flex;
+  align-items: center;
+  color: #fff !important;
+  justify-content: center;
+  height: 40px;
+}
 
-  <a id = Nairobi class = pin href="https://www.jacarandahealth.org/">
-    <img src="purple-pin.png" width=30px height=30px>
-  </a>
+.searchContainer {
+  position: relative;
+  margin-left: 25px;
+}
 
-  <a id = Elegyo-Marakwet class = pin href="region.html#East">
-    <img src="purple-pin.png" width=30px height=30px>
-  </a>
+.searchContainer input {
+  height: 40px;
+  padding: 0 25px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
 
-</body>
-</html>
+.searchContainer i {
+  position: absolute;
+  right: 15px;
+  top: 12.5px;
+  z-index: 1;
+  color: #a5a5a5;
+}
+
+.parralaxContainer {
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(245, 246, 252, 0.0)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+  background-attachment: fixed;
+  height: 200px;
+  border-radius: 4px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 25px;
+  background-size: cover;
+}
+
+.parralaxContainer.image2 {
+      background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.0), rgba(245, 246, 252, 0.0)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4645d1;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(253, 253, 253);
+}
+
+.button:hover {background-color: #4645d1}
+
+.button:active {
+  background-color: #4645d1;
+  box-shadow: 0 5px rgb(253, 253, 253);
+  transform: translateY(4px);
+}
+
+img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Pins */
+
+#Lamu{
+	position: relative;
+	left: 480px;
+	top: -240px;
+}
+
+#Isiolo{
+  position: relative;
+	left: 215px;
+	top: -390px;
+}
+
+#Turkana{
+	position: relative;
+	left: -120px;
+	top: -570px;
+}
+
+#Nairobi{
+	position: relative;
+	left: -150px;
+	top: -300px;
+}
+
+#Elegyo-Marakwet{
+	position: relative;
+	left: -350px;
+	top: -425px;
+}
+
+/* end pins */
