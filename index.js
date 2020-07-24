@@ -15,7 +15,7 @@ $(".results").html(html);
 
 $("#doSearch").submit(function(evt){
   evt.preventDefault();
-  let searchTerm = $("#search").val();
+  let searchTerm =$("#ssearch").val();
   console.log(searchTerm);
 
   let result = datak.filter(function(info){
@@ -29,6 +29,7 @@ $("#doSearch").submit(function(evt){
   let html = "";
   for(let i=0; i< result.length;i++){
       html = html + createTemplate(result[i]);
+      console.log(html);
   }
 
 $(".results").html(html);
@@ -44,6 +45,4 @@ function createTemplate(info){
         </div>
 
   `;
-
-
 }
