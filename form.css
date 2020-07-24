@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+
+* {
+font-family: 'Titillium Web', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#form {
+  padding: 25px;
+  margin: 0 !important;
+}
+
+select {
+  height: 60px;
+  border-radius: 2px;
+  padding: 0 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #f9fafc;
+    -webkit-appearance: none;
+    background-position-x: calc(100% - 25px);
+    border-color: #d3d1dc;
+    color: #9996a9;
+        background-size: 11px;
+}
+
+label {
+color: #9996a9;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.search {
+    background: #583ca0;
+    border: 0;
+    border-radius: 2px;
+    height: 60px;
+    color: #fff;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px 2px 25px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+}
+
+.search:hover {
+  background: #000;
+}
+
+.result-card {
+  padding: 25px !important;
+  margin-bottom: 25px !important;
+  border-radius: 2px;
+   border-color: #d3d1dc !important;
+}
+
+.result-card h3 {
+  margin-top: 0;
+  color: #9996a9;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+#results {
+  padding: 0 25px;
+}
+
+.result-card ul {
+  padding: 0;
+  list-style: none;
+}
+
+.result-card li {
+      font-size: 14px;
+    color: #9996a9;
+}
